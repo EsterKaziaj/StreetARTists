@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Item</title>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/add_edit.css"> <!-- Link to your CSS file -->
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-logo-box">
+            <a href="artist_items.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <h1 id="pageTitle">Add/Edit Item</h1>
+    </header>
+
+    <div class="container">
+        <form id="itemForm">
+            <div class="form-group">
+                <label for="title">Title (required)</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description (optional)</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type (required)</label>
+                <select id="type" name="type" required>
+                    <option value="">Select type</option>
+                    <!-- Example item types -->
+                    <option value="Painting">Painting</option>
+                    <option value="Sketch">Sketch</option>
+                    <option value="Sculpture">Sculpture</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price (required)</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="isPublished" name="isPublished" checked>
+                    Is Published
+                </label>
+            </div>
+
+            <div class="form-group upload-container">
+                <label for="imageUpload" class="upload-label">Upload Image (required)</label>
+                <input type="file" id="imageUpload" accept="image/*">
+                <span id="imageName"></span>
+            </div>
+
+            <input type="hidden" id="artist" value="Selected Artist Name">
+            <input type="hidden" id="dateCreated" value="">
+            <input type="hidden" id="dateSold">
+            <input type="hidden" id="priceSold">
+
+            <button type="button" class="btn" id="addEditButton">Add Item</button>
+            <button type="button" class="btn btn-cancel" id="cancelButton">Cancel</button>
+        </form>
+    </div>
+
+    <script src="script/add_edit.js"></script> <!-- Link to your JS file -->
+    
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/auction.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-logo-box">
+            <a href="visitors_home.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <h1>Street ARTists</h1>
+        <
+    </header>
+    <hr>
+
+    <!-- Main Content Section for Auction Container -->
+    <div class="main-content">
+        <div class="auction-container">
+            <h2>Auction Page</h2>
+            <div class="input-group">
+                <label for="uploadImage">Upload a Picture</label>
+                <input type="file" id="uploadImage" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="bidAmount">Place Your Bid ($)</label>
+                <input type="number" id="bidAmount" placeholder="Enter your bid amount" min="1">
+            </div>
+            <button class="submit-button" id="submitBid">Place Bid</button>
+        </div>
+
+        <div class="confirmation-window" id="confirmationWindow">
+            <p>We got your bid! You will be notified for further updates.</p>
+            <button class="close-button" id="closeWindow">Close</button>
+        </div>
+    </div>
+
+    <script src="script/auction.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+ /* General Styling */
+ body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6e8e3;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5d6ba;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header-logo-box {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #6b4f4f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header-logo-box img {
+    max-width: 40px;
+    max-height: 40px;
+}
+h1 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 28px;
+    color: #6b4f4f;
+    margin: 0;
+}
+.menu-icon {
+    font-size: 24px;
+    color: #6b4f4f;
+    cursor: pointer;
+}
+
+/* Sliding Menu Styling */
+.menu-panel {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #a06464;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    width: 100%; 
+    text-align: center; 
+}
+.menu-panel a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.menu-panel a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.widget-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.widget {
+    background-color: #fdece4;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #6b4f4f;
+}
+.widget:last-child {
+    margin-right: 0;
+}
+.chart-container {
+    padding: 20px;
+    background-color: #e7b7a4;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.chart-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.chart-controls button {
+    padding: 8px 12px;
+    background-color: #a06464;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chart-controls button:hover {
+    background-color: #8b514d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .widget-row {
+        flex-direction: column;
+    }
+    .widget {
+        margin-bottom: 15px;
+    }
+}

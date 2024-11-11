@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Listing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/visitors_listings.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="header-logo-box">
+        <a href="visitors_home.html"><img src="img/Logo.png" alt="Logo"></a>
+    </div>
+    <h1>Street ARTists</h1>
+    <a href="auction.html" class="auction-icon"><i class="fas fa-gavel"></i></a>
+</header>
+<hr>
+
+<!-- Container for Listing -->
+<div class="container" id="listingContainer"></div>
+
+<!-- Filter Button -->
+<div class="filter-button" id="filterButton"><i class="fas fa-filter"></i></div>
+
+<!-- Filter Panel -->
+<div class="filter-panel" id="filterPanel">
+    <button class="close-btn" id="closeFilter">&times;</button>
+    <h3>Filter by</h3>
+    <input type="text" id="filterName" placeholder="By Item Title">
+    <select id="filterArtist">
+        <option value="">Choose Artist</option>
+        <option value="Leanne Graham">Leanne Graham</option>
+        <option value="Ervin Howell">Ervin Howell</option>
+        <option value="Clementine Bauch">Clementine Bauch</option>
+        <option value="Patricia Lebsack">Patricia Lebsack</option>
+        <option value="Chelsey Dietrich">Chelsey Dietrich</option>
+        <option value="Mrs. Dennis Schulist">Mrs. Dennis Schulist</option>
+    </select>
+    <input type="number" id="minPrice" placeholder="Min Price">
+    <input type="number" id="maxPrice" placeholder="Max Price">
+    <select id="filterType">
+        <option value="">Choose Type</option>
+        <option value="Painting">Painting</option>
+        <option value="Sketch">Sketch</option>
+        <option value="Portrait">Portrait</option>
+        <option value="Pattern">Pattern</option>
+        <option value="Abstract">Abstract</option>
+    </select>
+    <button class="apply-btn" id="applyFilters"><i class="fas fa-check"></i></button>
+</div>
+
+<script src="script/visitors_listings.js"></script> <!-- Link to  JS file -->
+</body>
+</html>

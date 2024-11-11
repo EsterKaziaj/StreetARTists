@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signin.css"> <!-- Link to CSS file -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-logo-box">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <h1>Street ARTists</h1>
+        <div class="menu-icon" id="menuIcon">☰</div>
+        <div class="menu-panel" id="menuPanel">
+            <a href="index.html">Home</a>
+            <a href="#" id="signInToggle">Sign In</a>
+            <a href="#" id="signUpToggle">Sign Up</a>
+            <a href="#" id="logoutLink" style="display: none;">Logout</a>
+        </div>
+    </header>
+
+    <div class="form-container" id="signInForm">
+        <h2>Sign In</h2>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <button class="btn" id="signInButton">Sign In</button>
+        <span class="toggle-link" id="toggleSignUp">Don't have an account? Sign Up</span>
+    </div>
+
+    <div class="form-container" id="signUpForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="signupUsername">Username</label>
+            <input type="text" id="signupUsername" required>
+        </div>
+        <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" required>
+        </div>
+        <button class="btn" id="signUpButton">Sign Up</button>
+        <span class="toggle-link" id="toggleSignIn">Already have an account? Sign In</span>
+    </div>
+
+    <script src="script/signin.js"></script> <!-- Link to  JS file -->
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street ARTists - Visitor Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="css/visitor_home.css"> <!-- Link to CSS file -->
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-logo-box">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <h1>Street ARTists</h1>
+        <a href="auction.html" class="auction-icon"><i class="fas fa-gavel"></i></a>
+    </header>
+    <hr>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <p class="banner-text">Looking for a masterpiece?</p>
+            <a href="visitors_listings.html" class="banner-button">Find one now!</a>
+        </div>
+    </section>
+
+    <!-- Sliders Section -->
+    <section class="sliders">
+        <div class="slider-row first-row">
+            <a href="visitors_listings.html"><img src="img/mosaic1.png" alt="Art Piece 1"></a>
+            <a href="visitors_listings.html"><img src="img/mosaic2.png" alt="Art Piece 2"></a>
+            <a href="visitors_listings.html"><img src="img/mosaic3.png" alt="Art Piece 3"></a>
+            <a href="visitors_listings.html"><img src="img/mosaic4.png" alt="Art Piece 4"></a>
+        </div>
+        <div class="slider-row second-row">
+            <a href="visitors_listings.html"><img src="img/mosaic2.png" alt="Art Piece 5"></a>
+            <a href="visitors_listings.html"><img src="img/colours.png" alt="Art Piece 6"></a>
+            <a href="visitors_listings.html"><img src="img/painting.png" alt="Art Piece 7"></a>
+            <a href="visitors_listings.html"><img src="img/mosaic4.png" alt="Art Piece 8"></a>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="mySlides active">
+            <div class="carousel-content">
+                <div class="carousel-item-left">
+                    <div class="profile-image-container">
+                        <img src="img/girl.png" alt="Profile 1" class="profile-image">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                </div>
+                <div class="carousel-divider"></div>
+                <div class="carousel-item-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="mySlides">
+            <div class="carousel-content">
+                <div class="carousel-item-left">
+                    <div class="profile-image-container">
+                        <img src="img/painting.png" alt="Profile 2" class="profile-image">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                </div>
+                <div class="carousel-divider"></div>
+                <div class="carousel-item-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="mySlides">
+            <div class="carousel-content">
+                <div class="carousel-item-left">
+                    <div class="profile-image-container">
+                        <img src="img/colours.png" alt="Profile 3" class="profile-image">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
+                </div>
+                <div class="carousel-divider"></div>
+                <div class="carousel-item-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <button class="next" onclick="plusSlides(1)">❯</button>
+    </div>
+    
+    <script src="script/visitors_home.js"></script> <!-- Link to JS file -->
+</body>
+</html>

@@ -1,0 +1,132 @@
+    /* General Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f6e8e3;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Header Styling */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #f5d6ba;
+        position: sticky; /* Keeps header at the top */
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+    .header-logo-box {
+        display: flex;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #6b4f4f;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header-logo-box img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    h1 {
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 28px;
+        color: #6b4f4f;
+        margin: 0;
+    }
+    .auction-icon {
+        font-size: 24px;
+        color: #bd8a8a;
+        text-decoration: none;
+    }
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #6b4f4f;
+        margin: 0;
+    }
+
+    /* Centering Auction Container */
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .auction-container {
+        width: 90%;
+        max-width: 400px;
+        border: 2px dashed #a06464;
+        padding: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        font-family: 'Reenie Beanie', cursive;
+        color: #6b4f4f;
+    }
+    .input-group {
+        margin: 15px 0;
+    }
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #6b4f4f;
+    }
+    .input-group input[type="file"] {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .input-group input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .submit-button {
+        background-color: #a06464;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    .submit-button:hover {
+        background-color: #8b514d;
+    }
+    .confirmation-window {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    .close-button {
+        margin-top: 15px;
+        background-color: #a06464;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .close-button:hover {
+        background-color: #8b514d;
+    }
